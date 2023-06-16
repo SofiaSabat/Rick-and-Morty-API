@@ -1,0 +1,34 @@
+<div class="wrapper">    
+    <div class="container">
+        <div class="logo">
+            <img src="../../assets/logo/logo.jpg" alt=""> 
+           </div>
+     <div class="charackters-box ">
+            <ng-container *ngIf="allCharacters">            
+        <div  class="box-character" *ngFor="let item of allCharacters | paginate: { itemsPerPage:16, currentPage: p}">
+            <a routerLink="/character-info" [queryParams]="{ name: item.name,
+                image: item.image,
+                gender: item.gender,
+                 status: item.status,
+                 species: item.species,
+                 origin: item.origin.name,
+                 type: item.type             
+                  }" 
+                 routerLinkActive="active" 
+                 ariaCurrentWhenActive="page" >
+                <div class="box-character__img">
+                    <img src={{item.image}} alt="">
+                </div>
+                <div class="box-character-text ">
+                    <div class="box-character-text__name">{{item.name}}</div>
+                    <div class="box-character-text__role">{{item.species}}</div>
+                </div>
+            </a>
+        </div>
+    </ng-container>
+    </div>
+    <div class="pagination">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div >
+    </div>
+</div>

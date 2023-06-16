@@ -1,0 +1,36 @@
+<div class="wrapper">
+    <!-- <a href="" class="go-back-btn"> Go back</a> -->
+    <a class="go-back-btn" routerLink="/characters-list" routerLinkActive="active" ariaCurrentWhenActive="page" >Go back</a>
+<div class="container ">
+    <div class="info__box-person">
+         <div class="info__box-person-img">
+            <img src="{{characterImage}}" alt=""></div>   
+         <div class="info__box-person-title">{{characterName}}</div>
+    </div>
+    <div class="info__description">
+        <div class="info__description-title">Informations</div>
+        <div class="info__description-box box-info-description">
+         <div class="box-info-description__item">
+            <div class="box-info-description__item-title">Gender</div>
+            <div class="box-info-description__item-sub-title">{{characterGender}}</div>
+          </div>
+          <div class="box-info-description__item">
+            <div class="box-info-description__item-title">Status</div>
+            <div class="box-info-description__item-sub-title">{{characterStatus}}</div>
+          </div>
+          <div class="box-info-description__item">
+            <div class="box-info-description__item-title">Specie</div>
+            <div class="box-info-description__item-sub-title">{{characterSpecies}}</div>
+          </div>
+          <div class="box-info-description__item">
+            <div class="box-info-description__item-title">Origin</div>
+            <div class="box-info-description__item-sub-title">{{characterOrigin}}</div>
+          </div>
+          <div class="box-info-description__item">
+            <div class="box-info-description__item-title">Type</div>
+            <div class="box-info-description__item-sub-title">{{characterType}}</div>
+          </div>
+        </div>
+    </div>
+</div>
+</div>

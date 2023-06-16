@@ -1,0 +1,134 @@
+@import '../shared/base';
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 970px;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 320px;
+    }
+}
+
+.go-back-btn {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.info {}
+
+.info__box-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__box-person-img img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #F2F2F7;
+    border-radius: 150px;
+}
+
+.info__box-person-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #081F32;
+    text-align: center;
+    margin-top: 16px;
+
+}
+
+.info__description {}
+
+.info__description-title {
+    letter-spacing: 0.15px;
+
+    color: #8E8E93;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 48px 0 20px 0px;
+}
+
+.info__description-box {}
+
+.box-info-description {
+    margin-bottom: 140px;
+}
+
+.box-info-description__item {
+    padding: 9px 16px 12px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+}
+
+.box-info-description__item-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #081F32;
+}
+
+.box-info-description__item-sub-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #6E798C;
+}
+
+.go-back-btn {
+    display: flex;
+}
+
+.go-back-btn::before {
+    content: '';
+    background: url('../../assets/icons/arrow-left.svg') no-repeat;
+    width: 20px;
+    display: block;
+}
